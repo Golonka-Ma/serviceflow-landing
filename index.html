@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceFlow - Mini CRM dla fachowców</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-background.jpg') no-repeat center center/cover;
+            position: relative;
+            min-height: 80vh;
+        }
+        .cta-btn {
+            transition: all 0.3s ease-in-out;
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    
+<!-- Nagłówek / Hero Section -->
+<header class="hero-bg text-center flex items-center justify-center text-white relative">
+    <div class="relative z-10 max-w-3xl px-6 text-center py-20">
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg mb-4">Zarządzaj klientami i zleceniami w jednym miejscu</h1>
+        <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mt-2 mb-6">Prosty system dla freelancerów, elektryków, hydraulików i wszystkich fachowców</h2>
+        <p class="mt-4 text-xl text-gray-200">Dołącz do nas i zyskaj DARMOWY dostęp do systemu, który uprości Twoją pracę!</p>
+        <a href="#signup" class="mt-8 inline-block bg-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-xl cta-btn">Zapisz się na testy beta</a>
+    </div>
+</header>
+    
+    <!-- Problem / Solution -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Czy też masz dosyć...</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                            <p>Zapisywania klientów na kartkach, które później gubisz?</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                            <p>Zapominania o umówionych terminach i przeglądach?</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                            <p>Ręcznego wypełniania faktur po każdym zleceniu?</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                            <p>Narzędzi, które są zbyt skomplikowane lub drogie?</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="images/problem-management.jpg" alt="Problem zarządzania bez systemu" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Korzyści / Features -->
+<section class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Co planujemy stworzyć?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center feature-card border-t-4 border-blue-500">
+            <div class="text-blue-500 text-4xl mb-4">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3 class="font-bold text-2xl mb-3">Lista klientów i historia zleceń</h3>
+            <p class="text-gray-600">Masz pełny podgląd na swoją pracę i historię współpracy z klientami.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center feature-card border-t-4 border-blue-500">
+            <div class="text-blue-500 text-4xl mb-4">
+                <i class="fas fa-bell"></i>
+            </div>
+            <h3 class="font-bold text-2xl mb-3">Przypomnienia o terminach</h3>
+            <p class="text-gray-600">Nigdy więcej zapomnianych wizyt i zleceń. System powiadomi Cię o zbliżających się terminach.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center feature-card border-t-4 border-blue-500">
+            <div class="text-blue-500 text-4xl mb-4">
+                <i class="fas fa-file-invoice"></i>
+            </div>
+            <h3 class="font-bold text-2xl mb-3">Łatwe fakturowanie</h3>
+            <p class="text-gray-600">Generuj faktury w kilka kliknięć. Koniec z ręcznym wypełnianiem dokumentów.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center feature-card border-t-4 border-blue-500">
+            <div class="text-blue-500 text-4xl mb-4">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="font-bold text-2xl mb-3">Dostęp z telefonu</h3>
+            <p class="text-gray-600">Zarządzaj firmą z dowolnego miejsca. Pełna dostępność na komputerze i telefonie.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Współpraca i rozwój / Collaboration and Growth -->
+<section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Współpraca i rozwój</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="flex items-start">
+                <div class="text-blue-500 text-4xl mr-4">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Efektywne zarządzanie czasem</h3>
+                    <p class="text-gray-600">Nasze narzędzia są zaprojektowane tak, abyś mógł skupić się na tym, co naprawdę ważne. Automatyczne przypomnienia, łatwe fakturowanie i dostęp z telefonu to tylko niektóre z funkcji, które pomogą Ci zaoszczędzić czas.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="text-blue-500 text-4xl mr-4">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Rozwój Twojego biznesu</h3>
+                    <p class="text-gray-600">Chcemy, aby Twój biznes się rozwijał. Nasze narzędzia pomogą Ci osiągnąć sukces, a Twoje sugestie są dla nas ważne! Dzięki Twoim opiniom możemy stale ulepszać nasz system, aby lepiej odpowiadał na Twoje potrzeby.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="text-blue-500 text-4xl mr-4">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Współpraca z użytkownikami</h3>
+                    <p class="text-gray-600">Tworzymy ServiceFlow CRM z myślą o Tobie. Twoje sugestie i opinie mają realny wpływ na rozwój naszego narzędzia. Razem możemy stworzyć system, który będzie idealnie dopasowany do Twoich potrzeb.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="text-blue-500 text-4xl mr-4">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Innowacje i nowe funkcje</h3>
+                    <p class="text-gray-600">Stale pracujemy nad nowymi funkcjami i usprawnieniami, aby zapewnić Ci najlepsze możliwe narzędzie do zarządzania Twoim biznesem. Twoje opinie są kluczowe dla naszego rozwoju.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Jak to działa / How it works -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Jak będzie działać ServiceFlow?</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2">
+                    <img src="images/app-preview.jpg" alt="Przykładowy widok aplikacji" class="rounded-xl shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                            Dodajesz klientów
+                        </h3>
+                        <p class="mt-2 text-gray-600 pl-11">Tworzysz bazę swoich klientów z kontaktami i notatkami.</p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                            Planujesz zlecenia
+                        </h3>
+                        <p class="mt-2 text-gray-600 pl-11">Przypisujesz zlecenia do klientów i ustawiasz terminy realizacji.</p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                            Otrzymujesz przypomnienia
+                        </h3>
+                        <p class="mt-2 text-gray-600 pl-11">System automatycznie przypomina o zbliżających się terminach.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold flex items-center">
+                            <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+                            Wystawiasz faktury
+                        </h3>
+                        <p class="mt-2 text-gray-600 pl-11">Po zakończeniu zlecenia jednym kliknięciem generujesz fakturę.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Beta Testy CTA -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold mb-4">Zostań testerem i wpłyń na kształt systemu!</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="text-5xl font-bold mb-2">1</div>
+                    <p>Zapisz się na testy beta poniżej</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="text-5xl font-bold mb-2">2</div>
+                    <p>Otrzymaj dostęp przed wszystkimi</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="text-5xl font-bold mb-2">3</div>
+                    <p>Wpłyń na funkcje i zyskaj dożywotni rabat</p>
+                </div>
+            </div>
+            <p class="text-xl mb-8"><strong>Korzyści dla testerów beta:</strong> darmowy dostęp, wczesny wpływ na rozwój produktu, priorytetowe wsparcie</p>
+            <a href="#signup" class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-xl shadow-xl hover:bg-gray-100 transition cta-btn">Zapisz się teraz</a>
+        </div>
+    </section>
+    
+    <!-- Formularz zapisu / Sign Up -->
+    <section id="signup" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Zapisz się na darmowe testy beta!</h2>
+            <p class="text-xl text-center text-gray-600 mb-8">Przetestuj mini CRM za darmo i pomóż nam go dopracować.</p>
+            
+            <form id="signup-form" class="bg-gray-50 rounded-xl p-8 shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Imię</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="industry" class="block text-gray-700 mb-2">Jaka jest Twoja branża?</label>
+                    <select id="industry" name="industry" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <option value="">Wybierz branżę</option>
+                        <option value="elektryk">Elektryk</option>
+                        <option value="hydraulik">Hydraulik</option>
+                        <option value="spawacz">Spawacz</option>
+                        <option value="stolarz">Stolarz</option>
+                        <option value="inne">Inna</option>
+                    </select>
+                </div>
+                
+                <div class="mb-6" id="other-industry-container" style="display: none;">
+                    <label for="other-industry" class="block text-gray-700 mb-2">Podaj swoją branżę</label>
+                    <input type="text" id="other-industry" name="other_industry" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                
+                <div class="mb-6">
+                    <label for="current_management" class="block text-gray-700 mb-2">Jak teraz zarządzasz klientami i zleceniami?</label>
+                    <textarea id="current_management" name="current_management" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                
+                <div class="mb-8">
+                    <label for="biggest_problem" class="block text-gray-700 mb-2">Co jest największym problemem w Twojej pracy?</label>
+                    <textarea id="biggest_problem" name="biggest_problem" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:bg-blue-700 transition cta-btn">Zapisuję się na testy</button>
+                <p class="text-center text-gray-500 mt-4">Testy będą całkowicie darmowe. Szukamy 20-30 testerów.</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Najczęściej zadawane pytania</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-2">Ile będzie kosztował system po zakończeniu testów?</h3>
+                    <p class="text-gray-600">Planujemy przystępną cenę w modelu subskrypcyjnym, ale osoby testujące wersję beta otrzymają specjalne, preferencyjne warunki.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-2">Kiedy rozpoczną się testy beta?</h3>
+                    <p class="text-gray-600">Planujemy start testów w ciągu najbliższych 1-2 miesięcy. Wszystkie osoby zapisane na listę zostaną powiadomione mailowo.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-2">Czy moje dane będą bezpieczne?</h3>
+                    <p class="text-gray-600">Tak, bezpieczeństwo danych to nasz priorytet. Wszystkie informacje będą szyfrowane i przechowywane zgodnie z najwyższymi standardami.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-2">Co jeśli nie spodoba mi się system?</h3>
+                    <p class="text-gray-600">W każdej chwili możesz zrezygnować z testów bez żadnych zobowiązań. Twoja opinia pomoże nam ulepszyć produkt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- O nas -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Dlaczego tworzymy ServiceFlow CRM?</h2>
+            <p class="text-lg mb-6">Zauważyliśmy, że wielu fachowców prowadzi swoje firmy, korzystając z zeszytów, Excela lub nawet kartek papieru. Chcemy dostarczyć proste i niedrogie narzędzie, które pomoże małym firmom usługowym pracować efektywniej.</p>
+            <p class="text-lg mb-8">Naszym celem jest stworzenie systemu dopasowanego do rzeczywistych potrzeb fachowców w Polsce, dlatego tak ważne są dla nas opinie pierwszych testerów.</p>
+            <div class="bg-blue-50 p-8 rounded-xl">
+                <p class="font-bold text-xl mb-2">Pomóż nam ulepszyć ServiceFlow!</p>
+                <p class="mb-4">Twój głos ma znaczenie. Jako tester beta będziesz miał realny wpływ na kształt systemu.</p>
+                <a href="#signup" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:bg-blue-700 transition cta-btn">Dołącz do testów</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">ServiceFlow</h3>
+                    <p class="text-gray-400 max-w-md">Mini CRM dla fachowców, który upraszcza zarządzanie klientami i zleceniami.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Kontakt</h4>
+                    <p class="text-gray-400">serviceflowcrm@gmail.com</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ServiceFlow. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Skrypt do obsługi formularza
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Przykład z Formspree:
+            const formData = new FormData(this);
+            fetch('https://formspree.io/f/mpwpqryj', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Pokaż komunikat o sukcesie
+                    alert('Dziękujemy za zapisanie się na testy beta! Wkrótce się z Tobą skontaktujemy.');
+                    this.reset();
+                } else {
+                    throw new Error('Coś poszło nie tak...');
+                }
+            })
+            .catch(error => {
+                alert('Przepraszamy, wystąpił błąd. Spróbuj ponownie później.');
+                console.error(error);
+            });
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.getElementById('industry').addEventListener('change', function() {
+            var otherIndustryContainer = document.getElementById('other-industry-container');
+            if (this.value === 'inne') {
+                otherIndustryContainer.style.display = 'block';
+            } else {
+                otherIndustryContainer.style.display = 'none';
+            }
+        });
+
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Przykład z Formspree:
+            const formData = new FormData(this);
+            fetch('https://formspree.io/f/mpwpqryj', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Pokaż komunikat o sukcesie
+                    alert('Dziękujemy za zapisanie się na testy beta! Wkrótce się z Tobą skontaktujemy.');
+                    this.reset();
+                    document.getElementById('other-industry-container').style.display = 'none';
+                } else {
+                    throw new Error('Coś poszło nie tak...');
+                }
+            })
+            .catch(error => {
+                alert('Przepraszamy, wystąpił błąd. Spróbuj ponownie później.');
+                console.error(error);
+            });
+        });
+    </script>
+</body>
+</html>
